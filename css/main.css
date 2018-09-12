@@ -330,11 +330,11 @@ img.circle {
 /****************************************************************
  * OTHER 
  ****************************************************************/
- #cmu-info > tbody > tr > td:first-child {
+ .info-table > tbody > tr > td:first-child {
    color: #737373;
  }
 
- #cmu-info > tbody > tr > td:first-child + td {
+ .info-table > tbody > tr > td:first-child + td {
    font-size: 1.2em;
    font-weight: 700;
   }
@@ -367,4 +367,45 @@ img.circle {
 #non-technical-list > li {
   max-height: calc(1em + 15px);
   overflow: hidden;
+}
+
+.footnote {
+  font-size: 0.8em;
+  color: #737373;
+}
+
+.skill-type {
+  font-size: 2.4em;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+.skill-type.left {
+  text-align: right;
+}
+
+.skill-list.left {
+  border-right: 8px dotted #3B3C3E;
+}
+
+.skill-list.right {
+  border-left: 3px solid #3B3C3E;
+}
+
+.skill-list > ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.skill-list > ul > li {
+  margin: 5px 3px;
+  padding: 5px 15px;
+  background-color: #FAF0E6;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.skill-list.left > ul > li {
+  text-align: right;
 }
