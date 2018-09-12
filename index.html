@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119697035-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-119697035-1');
+  </script>
+
+  <meta charset="utf-8">
+  <title>Wilson Yu</title>
+  <link rel="icon" href="./img/logo2.png">
+
+  <meta property="og:title" content="Wilson" />
+  <meta property="og:image" content="./images/city.jpg" />
+  <meta property='og:description' content='Interactive Resume' />
+  <meta property="og:url" content="https://wiyu98.github.io" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="stylesheet" type="text/css" href="./css/bokeh.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.paroller.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div class="preloader-background">
+    <div class="preloader-wrapper huge active">
+      <div class="spinner-layer spinner-gold-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar-fixed">
+    <nav class="menu transparent z-depth-0" data-target="top" id="top-navbar">
+      <div class="nav-wrapper">
+        <a href="https://wiyu98.github.io" class="brand-logo title hide-on-med-and-down"><img src="./img/logo-alt.svg"
+            style="height: 25px;" class="enlarge fast" /></a>
+        <a href="#" data-target="mobile-sidenav" class="sidenav-trigger"><i class="fa fa-bars fa-2x" style="color: black;"
+            aria-hidden="true"></i>
+        </a>
+
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#education">EDUCATION</a></li>
+          <li><a href="#experience">EXPERIENCE</a></li>
+          <!-- <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#projects">PROJECTS</a></li> -->
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <ul class="sidenav" id="mobile-sidenav">
+    <h4 class="title">
+      &nbsp;
+      <a href="index.html" style="color: black;">
+        Wilson Yu
+      </a>
+    </h4>
+    <h6 class="subtitle">&nbsp;&nbsp;&nbsp;&nbsp;Programmer | Designer</h6><br>
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#education">EDUCATION</a></li>
+    <li><a href="#experience">EXPERIENCE</a></li>
+    <!-- <li><a href="#skills">SKILLS</a></li>
+    <li><a href="#projects">PROJECTS</a></li> -->
+    <div class="center-align">
+      <div class="button-row">
+        <a href="https://www.linkedin.com/in/wilson-yu-20253a131/" target="_blank" class="icon-link fa fa-linkedin-square fa-4x"></a>
+        <a href="./files/wilson-yu-resume.pdf" target="_blank" class="icon-link fa fa-file-pdf-o fa-4x"></a>
+        <a href="https://github.com/wiyu98/" target="_blank" class="icon-link fa fa-github-square fa-4x"></a>
+      </div>
+    </div>
+  </ul>
+
+  <!-- <div id="banner">
+    <div class="full-page banner-padding" style="background-color: #141B23">
+      <div class="container center">
+        <h1 id="banner-name" class="invisible"> Wilson B. Yu </h1>
+        <img id="banner-logo" src="./img/logo-alt-animated.svg" style="height:25vh;" class="enlarge scale-transition invisible" />
+      </div>
+    </div>
+  </div> -->
+
+  <div id="banner" class="row">
+    <div class="parallax-container full-page banner-padding" id="glance">
+      <div class="container center">
+        <h1 id="banner-name" class="invisible"> WILSON B. YU </h1>
+        <img id="banner-logo" src="./img/logo-alt-animated.svg" style="height:20vh;" class="invisible" />
+        <div class="button-row invisible" id="banner-buttons">
+          <a href="https://www.linkedin.com/in/wilson-yu-20253a131/" target="_blank" class="button light">
+            <i class="fa fa-linkedin-square"></i> &nbsp; LINKEDIN
+          </a>
+          <a href="files/wilson-yu-resume.pdf" target="_blank" class="button light">
+            <i class="fa fa-file-pdf-o"></i> &nbsp; RESUME
+          </a>
+          <a href="https://github.com/wiyu98/" target="_blank" class="button light">
+            <i class="fa fa-github"></i> &nbsp; GITHUB
+          </a>
+        </div>
+        <div class="button-row">
+          <a id="banner-down" href="#about" target="_blank" class="icon-link-inv fa fa-angle-double-down fa-4x scale-transition scale-out"></a>
+        </div>
+      </div>
+      <div class="parallax"><img src="img/bokeh.jpg"></div>
+    </div>
+  </div>
+
+  <div class="section" id="about">
+    <div class="section-title-container">
+      <div class="section-title dark">ABOUT ME</div>
+    </div>
+    <div class="row vcenter">
+      <div class="col l4 hide-on-med-and-down sr-left">
+        <img src="./img/profile-square.png" style="width:100%" class="circle enlarge" />
+      </div>
+      <div class="col l8 m12 sr-right justify padded">
+        <h5> Hello! </h5>
+        <p>
+          My name is Wilson. I am a junior at Carnegie Mellon University studying
+          Information Systems and Human-Computer Interaction. I take a great interest
+          in computer, statistics, and human behavior. Having grown up
+          drawing way too much, I'm also an avid fan of visual art and design. You can check
+          out some of my art and photography <a>here</a>.
+        </p>
+        <p>
+          Currently, I am searching for a 2019 summer internship in
+          UX design, software engineering, product management, or data science.
+        </p>
+      </div>
+    </div>
+    <div class="row sr-bottom center">
+      <br>
+      <h4> Contact Information </h4>
+      <h6> <a href="mailto:yu.wilson.b@gmail.com">yu.wilson.b@gmail.com</a> </h6>
+      <h6> <a href="tel:+1-240-543-9080">240-543-9080</a> </h6>
+      <h6> Rockville, MD | Pittsburgh, PA </h6>
+    </div>
+  </div>
+
+  <div class="row" id="education">
+    <div class="parallax-container thin">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <div class="section-title-container">
+            <div class="section-title light">EDUCATION</div>
+          </div>
+        </div>
+      </div>
+      <div class="parallax"><img src="img/hamerschlag-hall.jpg"></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="row vcenter">
+      <div class="col l8 m12 sr-left padded">
+        <h4> Carnegie Mellon University </h4>
+        <h6 class="subtitle"> <i>Pittsburgh, PA</i> </h6>
+        <table id="cmu-info">
+          <tbody>
+            <tr>
+              <td> Bachelor of Science </td>
+              <td> Information Systems </td>
+            </tr>
+            <tr>
+              <td> Additional Major </td>
+              <td> Human-Computer Interaction </td>
+            </tr>
+            <tr>
+              <td> Expected Graduation </td>
+              <td> May 2020 (Junior) </td>
+            </tr>
+            <tr>
+              <td> GPA </td>
+              <td> 4.0 </td>
+            </tr>
+            <tr>
+              <td> Distinctions </td>
+              <td>
+                Quantitative Social Science Scholar <br>
+                Dean's List with High Honors
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <a id="coursework-button" target="_blank" class="button dark" style="margin-left:0;">
+          COURSEWORK
+        </a>
+      </div>
+      <div class="col l4 hide-on-med-and-down sr-right">
+        <img src="./img/cmu-logo.jpg" style="width:100%" class="circle enlarge" />
+      </div>
+    </div>
+    <div class="row" id="coursework-list">
+      <div class="col l4">
+        <h6><b> Current Courses </b></h6>
+        <ul>
+          <li> Interaction Design </li>
+          <li> Web Application Security </li>
+          <li> Human Information Processing & Artificial Intelligence </li>
+          <li> Modern Regression </li>
+          <li> Entrepreneurism </li>
+        </ul>
+      </div>
+      <div class="col l4">
+        <h6><b> Past Courses </b></h6>
+        <ul>
+          <li> Machine Learning (Master's)</li>
+          <li> Application Design & Development </li>
+          <li> Database Design & Development </li>
+          <li> Algorithms & Data Structures </li>
+          <li> Mathematical Proofs & Concepts</li>
+          <li> Stochastic Modeling </li>
+          <li> Linear Algebra </li>
+          <li> Multivariate Calculus </li>
+          <li> Probability Theory </li>
+          <li> Statistical Inference </li>
+          <li> Methods for Statistical Data Science </li>
+        </ul>
+      </div>
+      <div class="col l4">
+        <i id="non-technical-button" class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i>
+        <ul id="non-technical-list">
+          <li> Intermediate Microeconomics </li>
+          <li> Reason, Passion, & Cognition </li>
+          <li> Computing, Artificial Intelligence, and Philosophy </li>
+          <li> Computer Music </li>
+          <li> Global Histories </li>
+          <li> Interpretation & Argumentation </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="experience">
+    <div class="parallax-container thin">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <div class="section-title-container">
+            <div class="section-title light">EXPERIENCE</div>
+          </div>
+        </div>
+      </div>
+      <div class="parallax"><img src="img/boise.jpg"></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="row vcenter">
+      <div class="col l4 hide-on-med-and-down sr-right">
+        <img src="./img/clearwater-logo.jpg" style="width:100%" class="circle enlarge" />
+      </div>
+      <div class="col l8 m12 sr-left padded">
+        <h4> Clearwater Analytics </h4>
+        <h5> <b> Software Development Intern </b> </h5>
+        <h6 class="subtitle"> May 2018 - August 2018 | <i>Boise, ID</i> </h6>
+        <div class="justify">
+          <p>
+            Over the summer, I worked on an agile development team with other interns to
+            develop an internal full-stack web application for processing financial data.
+          </p>
+          <p>
+            I helped in designing and implementing tables and stored procedures in SQL and connecting
+            the database to a Java backend. Then, I worked on implementing ETLs to clean
+            and transform data, before creating RESTful web services to send data to the front-end.
+            Using the React framework, I helped build the user interface for users
+            to perform CRUD operations, and added functionalities like authentication.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="row vcenter">
+      <div class="col l8 m12 sr-left padded">
+        <h4> Carnegie Mellon University </h4>
+        <h5> <b> Teaching Assistant </b> </h5>
+        <h6 class="subtitle"> January 2017 - May 2018 | <i>Pittsburgh, ID</i> </h6>
+        <div class="justify">
+          <p>
+            As a student at Carnegie Mellon, I've been a teaching assistant for two courses:
+            21-240 <i> Matrix Algebra with Applications </i> and 36-202 <i> Methods for Statistical Data Science </i>,
+            helping with grading and holding office hours.
+          </p>
+          <p>
+            In Matrix Algebra, I taught a recitation, focusing mostly on computational problems
+            and simple proofs. Topics included vector spaces, orthogonality, real and complex eigenvalues
+            and eigenvectors, linear transformations, the invertible matrix theorem, and more.
+          </p>
+          <p>
+            In Methods for Statistical Data Science, I assisted the lab, helping students learn
+            how to use R to visualize and model data.
+          </p>
+        </div>
+      </div>
+      <div class="col l4 hide-on-med-and-down sr-right">
+        <img src="./img/cmu-logo.jpg" style="width:100%" class="circle enlarge" />
+      </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="row vcenter">
+      <div class="col l12 m12 sr-bottom">
+        <h4> Dragon Construction, Inc. </h4>
+        <h5> <b> Construction Laborer </b> </h5>
+        <h6 class="subtitle"> May 2016 - Present | <i> Washington, DC Area </i> </h6>
+        <div class="justify">
+          <p>
+            Any time I'm not at school, I'm probably working with my dad, a contractor,
+            helping him in home renovations and repairs.
+          </p>
+          <p>
+            Mostly, I paint walls, screw stuff in, and haul a lot of heavy stuff around,
+            but I've also been learning some simple carpentry, electrical wiring, and plumbing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

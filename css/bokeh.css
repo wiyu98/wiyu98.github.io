@@ -1,0 +1,47 @@
+.bokeh {
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px rgba(255,255,255,0.5);
+}
+
+/* Size */
+.bokeh.tiny {
+  height: 25px;
+  width: 25px;
+}
+
+.bokeh.small {
+  height: 40px;
+  width: 40px;
+}
+
+.bokeh.medium {
+  height: 55px;
+  width: 55px;
+}
+
+.bokeh.big {
+  height: 70px;
+  width: 70px;
+}
+
+/* Distance */
+.bokeh.distant {
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.bokeh.far {
+  opacity: 0.24;
+  z-index: 2;
+}
+
+.bokeh.near {
+  opacity: 0.42;
+  z-index: 3
+}
+
+.bokeh.close {
+  opacity: 0.6;
+  z-index: 4;
+}
