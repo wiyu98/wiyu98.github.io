@@ -10,25 +10,30 @@ $(window).on('load', function () {
     }, 1750);
     setTimeout(function () { $("#banner-buttons").fadeIn(1000); }, 1750);
     setTimeout(function () { $("#banner-down").removeClass("scale-out").addClass("scale-in"); }, 2250);
-
 });
 
 $(document).ready(function () {
     $('.parallax').parallax();
     $('.sidenav').sidenav();
 
+    $(document).scroll(function () {
+        var navbar = $("#top-navbar");
+        navbar.toggleClass('afterScroll', $(this).scrollTop() > window.screen.height * 0.1);
+    });
+
+    //Bokeh effect
     let numBokehDots = 30;
     let banner = document.getElementById("banner");
     let sizes = ["tiny", "small", "medium", "big"];
     let distances = ["distant", "far", "near", "close"];
     let colors = ["#D3BE86", "white", "#FAF0E6"];
-
+  
     for (var i = 0; i < numBokehDots; i++) {
         let newBokehDot = document.createElement("div")
         newBokehDot.classList.add("bokeh");
         newBokehDot.classList.add(sizes[Math.floor(Math.random() * sizes.length)]);
         newBokehDot.classList.add(distances[Math.floor(Math.random() * distances.length)]);
-
+  
         newBokehDot.style.top = (Math.floor(40 + (i * 0.8) + Math.random() * 5)).toString() + "vh";
         if (i % 2 == 0) {
             newBokehDot.style.left = (Math.floor(Math.pow(Math.random() + 0.2, 2) * 30)).toString() + "vw";
@@ -36,21 +41,15 @@ $(document).ready(function () {
         else {
             newBokehDot.style.right = (Math.floor(Math.pow(Math.random() + 0.2, 2) * 30)).toString() + "vw";
         }
-
+  
         newBokehDot.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
         banner.appendChild(newBokehDot);
     }
-
+  
     $(".bokeh.distant").paroller({ factor: 0.2, type: 'foreground', direction: 'vertical' });
     $(".bokeh.far").paroller({ factor: 0.4, type: 'foreground', direction: 'vertical' });
     $(".bokeh.near").paroller({ factor: 0.8, type: 'foreground', direction: 'vertical' });
-    $(".bokeh.close").paroller({ factor: 1.2, type: 'foreground', direction: 'vertical' });
-
-    $(document).scroll(function () {
-        var navbar = $("#top-navbar");
-        navbar.toggleClass('afterScroll', $(this).scrollTop() > window.screen.height * 0.1);
-    });
-
+    $(".bokeh.close").paroller({ factor: 1.2, type: 'foreground', direction: 'vertical' });  
 
     ScrollReveal({ origin: 'bottom', distance: '50px', duration: '2000' }).reveal('.section');
     ScrollReveal({ origin: 'bottom', distance: '50px', duration: '2000' }).reveal('.sr-bottom');

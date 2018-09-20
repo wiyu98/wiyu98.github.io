@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Playfair+Display+SC');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Playfair+Display');
 
 /****************************************************************
  * COLORS
@@ -160,10 +160,20 @@ nav ul li:hover {
   padding-top: 25vh;
 }
 
+.simple-banner {
+  padding-top: 25vh;
+  padding-bottom: 10vh;
+  background-color: #141B23;
+}
+
 @media only screen and (max-width: 992px) {
   .banner-padding {
     padding-top: 15vh;
   }
+
+  .banner-padding-portfolio {
+    padding-top: 25vh;
+  }  
 }
 
 /****************************************************************
@@ -212,6 +222,47 @@ img.circle {
 .parallax-container.thin{
   height: 50vh;
 }
+
+.parallax-container.thick{
+  height: 75vh;
+}
+
+.extra-top-padding{
+  padding-top: 15vh;
+}
+
+.image-container {
+  position: relative;
+  -moz-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  cursor: pointer;
+}
+
+.image-container:hover {
+  opacity: 0.5;
+  transform: scale(1.05);
+  border: 5px solid #fff;
+  outline: 5px double #fff;
+  outline-offset: -25px;
+  color: none;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+@media only screen and (max-width: 992px) and (min-width: 601px) {
+  .image-text {
+    font-size: 1.6em;
+  }
+}
+
 
 /****************************************************************
  * Containers 
@@ -388,6 +439,18 @@ img.circle {
   font-family: "Montserrat", sans-serif;
 }
 
+@media only screen and (max-width: 992px) {
+  .skill-type {
+    font-size: 1.6em;
+    text-align: center;
+    transform: rotate(90deg);
+  }
+
+  .skill-type.left {
+    transform: rotate(270deg);
+  }
+}
+
 .skill-type.left {
   text-align: right;
 }
@@ -426,4 +489,35 @@ img.circle {
   border-top: 1px solid #dddddd;
   padding-top: 5vh;
   padding-bottom: 10vh;
+}
+
+/****************************************************************
+ * PORTFOLIO PAGE 
+ ****************************************************************/
+.portfolio-title {
+  font-family: "Playfair Display", serif;
+  margin-top: 0;
+}
+
+ nav.portfolio-nav {
+  background-color: white;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  box-shadow: none;
+  color: #3B3C3E;
+}
+.portfolio-navitems { text-align: center; }
+.portfolio-navitems li {
+  display: inline;
+  float: none;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.portfolio-navitems li a {
+  display: inline-block;
+  color: #3B3C3E;
+}
+
+.portfolio-image {
+  margin-bottom: 20px;
 }
