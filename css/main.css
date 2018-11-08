@@ -242,7 +242,7 @@ img.circle {
 
 .image-container:hover {
   opacity: 0.5;
-  transform: scale(1.05);
+  transform: scale(1.02);
   border: 5px solid #fff;
   outline: 5px double #fff;
   outline-offset: -25px;
